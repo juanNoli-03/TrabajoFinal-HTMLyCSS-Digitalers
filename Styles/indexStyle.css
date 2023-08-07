@@ -1,0 +1,449 @@
+/* Restablecemos valores de la Pagina*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*Estilos del Header*/
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+    border-bottom: solid #2cd4d9 5px;
+    width: 100%;
+}
+
+.nav-title > h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.nav-title > h1 > img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links > a {
+    margin: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > a > img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.a-activo {
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.a-inactivo {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.a-inactivo:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.a-inactivo-cuenta {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.a-inactivo-cuenta > img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 55px;
+}
+
+.a-inactivo-cuenta > img:hover {
+    width: 55px;
+    height: 55px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos del Carrousel */
+.carrousel-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel {
+    width: 95%;
+    border: solid #2cd4d9 5px;
+}
+
+.carousel-item > img {
+    width: 450px;
+    height: 600px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos de seccion Proximamente */
+.proximamente-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+    border-top: solid #2cd4d9 3px;
+    border-bottom: solid #2cd4d9 3px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid #2cd4d9;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+    background-color: white;
+}
+
+.card-container > img {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 15px;
+    border: solid black;
+}
+
+.card-container > h5 {
+    font-weight: bold;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos de seccion Descargas */
+.section-descargas {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top: solid #2cd4d9;
+    border-bottom: solid #2cd4d9;
+    width: 100%;
+}
+
+.section-descargas > h3 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-descargas > h5 {
+    color: black;
+}
+
+.section-descargas-paso1 > a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-descargas-paso1 > a > img {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.section-descargas-paso1 > a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+.section-descargas-paso2 {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.section-descargas-paso2-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid #2cd4d9;
+    margin: 10px;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+}
+
+.section-descargas-paso2-card > img {
+    height: 180px;
+    width: 140px;
+    margin: 10px;
+    border-radius: 15px;
+    border: solid black;
+}
+
+.section-descargas-paso2-card:hover {
+    border: solid black 5px;
+}
+
+.section-descargas-paso3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-descargas-paso3-contenedor {
+    margin-bottom: 10px;
+}
+
+.section-descargas-paso3-contenedor > img {
+    border-radius: 60px;
+    border: solid black 5px;
+    height: 80px;
+    width: 80px;
+}
+
+.section-descargas-paso3-contenedor > img:hover {
+    border: solid black 7px;
+}
+
+.section-descargas-paso4 {
+    margin-top: 5px;
+}
+
+.section-descargas-paso4 > img {
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    border: solid black 3px;
+    padding: 5px;
+    background-color: greenyellow;
+}
+
+.section-descargas-paso4 > img:hover {
+    border: solid black 6px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos del Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+    border-top:solid #2cd4d9 5px;
+}
+
+.footer-title > h6 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer-title > h6 > img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.footer-info > h6 {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer-socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-socialMedia > img {
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos de los botones de la pagina */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container > button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    border: solid black 3px;
+    margin: 20px;
+}
+
+.button-container > button > a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.button-container > button > a:hover {
+    font-weight: bold;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*Estilos de los titulos de la pagina */
+.title-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    text-align: center;
+}
+
+.title-container > h1 {
+    color: black;
+    font-weight: bold;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Media Query para Header y Footer */
+@media (max-width:1080px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links > a {
+        margin-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
+
+@media (max-width:370px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links > a {
+        margin-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Media Query para el Carrousel*/
+@media (max-width:870px) {
+    .carousel-item > img {
+        height: 430px;
+    }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Media Query para seccion Proximamente */
+@media (max-width: 360px) {
+    .card-container {
+        max-width: 100%;
+    }
+
+    .card-container > img {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .card-container {
+        margin: 30px;
+    }
+}
+/*------------------------------------------------------------------------*/

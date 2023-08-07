@@ -1,0 +1,332 @@
+/* Restablecemos valores de la Pagina*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*Estilos del Header*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+    border-bottom: solid #2cd4d9 5px;
+    width: 100%;
+}
+
+.nav-title > h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.nav-title > h1 > img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links > a {
+    margin: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > a > img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.a-activo {
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.a-inactivo {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.a-inactivo:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.a-inactivo-cuenta {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.a-inactivo-cuenta > img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 55px;
+}
+
+.a-inactivo-cuenta > img:hover {
+    width: 55px;
+    height: 55px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos del Main */
+.main-titulo {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 10px;
+}
+
+.main-titulo > h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+    border-top: solid #2cd4d9;
+    border-bottom: solid #2cd4d9;
+    grid-template-areas: 
+    "card-container-1 card-container-2 card-container-3 card-container-4"
+    "card-container-5 card-container-6 card-container-7 card-container-8";
+}
+
+#card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: solid #2cd4d9 5px;
+    margin: 10px;
+}
+
+#card-container > img {
+    height: 250px;
+    width: 220px;
+    margin: 10px;
+    border-radius: 20px;
+    border: solid black;
+}
+
+#card-container > h2 {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#card-container > h2  > img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.idioma-boton-container {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.idioma-boton-container > label {
+    font-weight: bold;
+    margin: 5px;
+}
+
+.idioma-boton-container > select {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid black 2px;
+    margin-top: 5px;
+    color: black;
+    font-size: small;
+    width: 50%;
+}
+
+.idioma-boton-container > button {
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    font-size: large;
+    background-color: green;
+    border-radius: 5px;
+    border: solid black 3px;
+}
+
+.idioma-boton-container > button:hover {
+    font-weight: bold;
+    border: solid black 5px;
+}
+
+.card-container-1 {
+    grid-area: card-container-1;
+}
+
+.card-container-2 {
+    grid-area: card-container-2;
+}
+
+.card-container-3 {
+    grid-area: card-container-3;
+}
+
+.card-container-4 {
+    grid-area: card-container-4;
+}
+
+.card-container-5 {
+    grid-area: card-container-5;
+}
+
+.card-container-6 {
+    grid-area: card-container-6;
+}
+
+.card-container-7 {
+    grid-area: card-container-7;
+}
+
+.card-container-8 {
+    grid-area: card-container-8;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos del Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+    border-top:solid #2cd4d9 5px;
+}
+
+.footer-title > h6 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer-title > h6 > img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.footer-info > h6 {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer-socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-socialMedia > img {
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Media Query para Header y Footer */
+@media (max-width:1040px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links > a {
+        margin-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+/* Media Query para el main */
+@media (max-width:1100px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #card-container {
+        width: 65%;
+    }
+
+    #card-container > h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #card-container > img {
+        max-width: 90%;
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/

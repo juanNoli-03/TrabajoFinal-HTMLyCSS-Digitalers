@@ -1,0 +1,267 @@
+/* Restablecemos valores de la Pagina*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*Estilos del Header*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+    border-bottom: solid #2cd4d9 5px;
+    width: 100%;
+}
+
+.nav-title > h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.nav-title > h1 > img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links > a {
+    margin: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > a > img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.a-activo {
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.a-inactivo {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.a-inactivo:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.a-inactivo-cuenta {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.a-activo-cuenta > img {
+    width: 50px;
+    height: 50px;
+    color: black;
+    border-radius: 55px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos del Main */
+.title-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+    color: black;
+}
+
+.title-container > h1 {
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border-top: solid #2cd4d9 5px;
+    border-bottom: solid #2cd4d9 5px;
+    grid-template-areas: 
+    "form-iniciarSesion-container form-registrarse-container";
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.form-iniciarSesion-container {
+    display: flex;
+    justify-content: center;
+    grid-area: form-iniciarSesion-container;
+    margin: 20px;
+}
+
+.form-registrarse-container {
+    display: flex;
+    justify-content: center;
+    grid-area: form-registrarse-container;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > h3 {
+    text-decoration: underline;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+form > label {
+    margin: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+form > input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+form > button {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+form > button:hover {
+    font-size: larger;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos del Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(to left top, #5333ed, #2cd4d9);
+    border-top:solid #2cd4d9 5px;
+}
+
+.footer-title > h6 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer-title > h6 > img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.footer-info > h6 {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer-socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-socialMedia > img {
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Media Query para Header y Footer */
+@media (max-width:1040px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links > a {
+        margin-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+/* Media Query para el Main */
+@media (max-width:500px) {
+    main {
+        
+        display: flex;
+        
+        flex-direction: column;
+    }
+
+    .form-iniciarSesion-container {
+        margin-bottom: 80px;
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
