@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo lo nuevo de la industria del cine en un solo lugar.">
+    <meta name="keywords" content="peliculas, estrenos, cartelera, descargar peliculas, peliculas gratis, actualidad del cine, proximamente en cines">
+    <link rel="stylesheet" href="./Styles/indexStyle.css">
+    <link rel="shortcut icon" href="./Media/pochocloIcono.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <title>TusPelis</title>
+</head>
+
+<body>
+  <!--Header de la Pagina-->
+    <header>
+        <nav>
+            <div class="nav-title">
+                <h1>TusPelis <img src="./Media/simboloPagina.png" alt=""></h1>
+            </div>
+
+            <div class="nav-links">
+                <a href="./index.html" class="a-activo"><img src="./Media/pochocloIcono.png" alt="iconoPochoclo">Inicio</a>
+                <a href="./Pages/ahoraEnCines.html" class="a-inactivo"><img src="./Media/pochocloIcono.png" alt="iconoPochoclo">Ahora en Cines</a>
+                <a href="./Pages/proximosEstrenos.html" class="a-inactivo"><img src="./Media/pochocloIcono.png" alt="iconoPochoclo">Próximos Estrenos</a>
+                <a href="./Pages/descargarPelis.html" class="a-inactivo"><img src="./Media/pochocloIcono.png" alt="iconoPochoclo">Descargar Películas</a>
+                <a href="./Pages/cuenta.html" class="a-inactivo-cuenta"><img src="./Media/miCuenta.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    <!------------------------------------------------------------------------------------>
+
+    <!--Section con carrousel incluido-->
+    <section class="carrousel-section">
+      
+      <div class="title-container">
+        <h1>Ahora en Cines</h1>
+      </div>
+      
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./Media/barbie.jpg_large" class="d-block w-100" alt="Barbie">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./Media/misionImposible.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Media/openhaimer.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="button-container">
+              <button><a href="./Pages/ahoraEnCines.html">Ver cartelera</a></button>
+          </div>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------------------------>
+  
+    <!--Seccion Proximamente-->
+    <div class="title-container">
+        <h1>Próximamente en Cines</h1>
+    </div>
+
+    <section class="proximamente-section">
+      
+      <div class="card-container">
+        <h3>Gran Turismo</h3>
+        <img src="./Media/GranTurismo.jpg" alt="Gran Turismo">
+        <h5>Estreno: 24/8/2023</h5>
+      </div>
+      
+      <div class="card-container">
+        <h3>Los Juegos del Hambre 5</h3>
+        <img src="./Media/JuegosDelHambre.jpg" alt="Juegos del Hambre">
+        <h5>Estreno: 16/11/2023</h5>
+      </div>
+      
+      <div class="card-container">
+        <h3>Tortugas Ninja</h3>
+        <img src="./Media/tortujasNinja.webp" alt="Totugas Ninja">
+        <h5>Estreno: 25/8/2023</h5>
+      </div>
+
+      <div class="card-container">
+        <h3>Blue Beetle</h3>
+        <img src="./Media/blueBeetle.webp" alt="Blue Beetle">
+        <h5>Estreno: 17/08/2023</h5>
+      </div>
+      
+      <div class="card-container">
+        <h3>Escape Bajo Fuego</h3>
+        <img src="./Media/Escape Bajo Fuego.jpg" alt="Escape Bajo Fuego">
+        <h5>Estreno: 24/8/2023</h5>
+      </div>
+      
+      <div class="card-container">
+        <h3>Contrarreloj</h3>
+        <img src="./Media/contrareloj.webp" alt="Contrarreloj">
+        <h5>Estreno: 31/08/2023</h5>
+      </div>
+
+    </section>
+
+    <div class="button-container">
+      
+      <button><a href="./Pages/proximosEstrenos.html">Próximos Estrenos</a></button>
+    
+    </div>
+    <!----------------------------------------------------------------------------------------->
+
+    <!--Seccion Descargas-->
+    <div class="title-container">
+      <h1>Descargá nuestras Películas</h1>
+    </div>
+
+    <section class="section-descargas">
+      
+      <h3>Descargalas en 4 simples pasos!</h3>
+
+      <h5>1- Crea tu cuenta o Iniciá Sesión</h5>
+      
+      <div class="section-descargas-paso1">
+        <a href="./Pages/cuenta.html">Registrarse o Iniciar Sesión <img src="./Media/miCuenta.png" alt="Iniciar Sesion"></a>
+      </div>
+
+      <h5>2- Elegí la peli que más te guste</h5>
+
+      <div class="section-descargas-paso2">
+
+          <div class="section-descargas-paso2-card">
+            <img src="./Media/contratiempo.jpg" alt="Contratiempo">
+          </div>
+
+          <div class="section-descargas-paso2-card">
+            <img src="./Media/cars.jpg" alt="Cars 3">
+          </div>
+
+          <div class="section-descargas-paso2-card">
+            <img src="./Media/gladiador.jpg" alt="Gladiador">
+          </div>
+
+          <div class="section-descargas-paso2-card">
+            <img src="./Media/toyStory.jpeg" alt="toyStory">
+          </div>
+
+          <div class="section-descargas-paso2-card">
+            <img src="./Media/fragmentado.jpg" alt="Fragmentado">
+          </div>
+
+      </div>
+
+      <h5>3- Elegí el idioma en el cual la queres descargar</h5>
+
+      <div class="section-descargas-paso3">
+        
+        <div class="section-descargas-paso3-contenedor">
+          <img src="./Media/espana.png" alt="banderaEspaña">
+        </div>
+
+        <div class="section-descargas-paso3-contenedor">
+          <img src="./Media/reino-unido.png" alt="banderaGB">
+        </div>
+        <div class="section-descargas-paso3-contenedor">
+          <img src="./Media/alemania.png" alt="banderaAlemania">
+        </div>
+        <div class="section-descargas-paso3-contenedor">
+          <img src="./Media/italia.png" alt="banderaItalia">
+        </div>
+      </div>
+
+      <h5>4- Presioná el boton de descargar y listo!</h5>
+
+      <div class="section-descargas-paso4">
+        <img src="./Media/iconoDescarga.png" alt="iconoDescarga">
+      </div>
+
+    </section>
+
+    <div class="button-container">
+      <button><a href="./Pages/descargarPelis.html">Descargar Películas</a></button>
+    </div>
+    <!----------------------------------------------------------------------------------------->
+
+    <!--Fotter de la Pagina-->
+    <footer>
+      
+      <div class="footer-title">
+        <h6>TusPelis <img src="./Media/simboloPagina.png" alt=""></h6>
+      </div>
+
+      <div class="footer-info">
+        <h6>©2023 Copyright. Desarrollado por: DigitalersCamp | Diseño: Juan Manuel Noli</h6>
+      </div>
+
+      <div class="footer-socialMedia">
+        <img src="./Media/instagramIcon.png" alt="iconoInstagram">
+        <img src="./Media/facebookIcon.png" alt="iconoFacebook">
+        <img src="./Media/twitterIcon.png" alt="iconoTwitter">
+      </div>
+
+    </footer>
+    <!----------------------------------------------------------------------------------------->
+</body>
+
+</html>
