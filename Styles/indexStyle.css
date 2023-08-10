@@ -424,7 +424,7 @@ footer {
 /* Media Query para el Carrousel*/
 @media (max-width:870px) {
     .carousel-item > img {
-        height: 430px;
+        height: 330px;
     }
 }
 /*------------------------------------------------------------------------------------------------------------*/
