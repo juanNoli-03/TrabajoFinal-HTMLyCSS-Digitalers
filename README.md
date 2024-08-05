@@ -1,9 +1,11 @@
 <div id="user-content-toc">
   <ul align="center">
-    <summary><h1 style="display: inline-block">Creación de Sitio Web para trabajo final del modulo de HTML y CSS --- Curso Digitalers</h1></summary>
+    <summary><h1 style="display: inline-block">Creación de Sitio Web para trabajo final del modulo de HTML y CSS 
+      Curso Digitalers</h1></summary>
   </ul>
 </div>
 
+![image](https://github.com/user-attachments/assets/9a56fde0-aa02-4c3a-a1ba-5e99a90697ac)
 
 
 ----
@@ -21,4 +23,6 @@
 - Las fotos que sean optimizadas lo más posible para web
 - Cada html con 5 etiquetas semánticas como mínimo:
 obligatorio header, main y footer (puede ser nav, section, article, etc)
+
+**LINK A DEPLOY:** ***https://juannoli-03.github.io/TrabajoFinal-HTMLyCSS-Digitalers/***
 
